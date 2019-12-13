@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200i,300,400&display=block');
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+  font-family: mono;
+  font-style: normal;
+  font-weight: normal;
+  src: local(".Monaco"), local(".Menlo"), local(".SFMono-Regular"), local("Consolas"), local("Liberation Mono"), local("Courier New");
+}
+
+@value colors './colors.css';
+@value granny, prince, venom from colors;
+@value baseTextSize 2rem;
+
+:global #app {
+    font: normal normal 300 baseTextSize/normal 'Raleway', 'system', sans-serif;
+    color: venom;
+}

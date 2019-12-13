@@ -1,0 +1,18 @@
+@value baseTextSize from '../../../styles/typography.css';
+@value largerTitle 3;
+@value smallerTitle 2;
+
+.app-title {
+    --sizeFactor: largerTitle;
+    font-size: calc(baseTextSize * var(--sizeFactor));
+    text-align: center;
+}
+
+.contrast-text {
+    font-style: italic;
+    font-weight: 200;
+}
+
+.monospaced {
+    font-family: 'mono', monospace;
+}
